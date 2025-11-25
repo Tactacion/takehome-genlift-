@@ -1,4 +1,5 @@
-# Customer Churn Prediction 
+# Customer Churn Prediction
+
 ## Overview
 
 This project transforms raw customer event streams (logins, page views, support tickets, etc.) into fixed-dimensional features and trains two models to predict 30-day churn:
