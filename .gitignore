@@ -1,0 +1,134 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyTorch & ML Models
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+models/
+checkpoints/
+wandb/
+mlruns/
+
+# Data files (except events.csv which we want to keep)
+data/processed/
+*.parquet
+# Keep events.csv but ignore other CSV files in specific directories
+data/**/*.csv
+!events.csv
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+!**/notebooks/*.ipynb
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Manim (video generation)
+video/media/
+video/__pycache__/
+*.mp4
+*.mov
+*.avi
+!video/README_VIDEO.md
+!video/QUICK_START.md
+
+# TTS/Voice cache
+video/media/
+*.mp3
+*.wav
+*.srt
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Outputs and results
+outputs/
+results/
+*.png
+*.pdf
+*.svg
+!docs/**/*.png
+!docs/**/*.pdf
+
+# Model artifacts
+bert_models/*/
+!bert_models/.gitkeep
+
+# Claude artifacts
+.claude/

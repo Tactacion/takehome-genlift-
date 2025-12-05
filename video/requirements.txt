@@ -1,0 +1,2 @@
+manim>=0.18.0
+manim-voiceover[gtts]>=0.3.7

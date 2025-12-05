@@ -1,0 +1,29 @@
+tkhm/
+├── README.md                    # main documentation
+├── APPROACH.md                  # detailed methodology and design choices
+├── requirements.txt             # python dependencies
+├── events.csv                   # input data
+│
+├── src/                         # source code
+│   ├── bert_config.py          # model hyperparameters
+│   ├── bert_layers.py          # time encoding, focal loss, transformer
+│   ├── bert_model.py           # full model (pytorch lightning version)
+│   ├── bert_train_simple.py    # training script (standalone, no lightning)
+│   └── simple_dataset.py       # data loading and preprocessing
+│
+└── bert_models/                 # trained models (created after training)
+    ├── best_model.pt           # best checkpoint (val auprc)
+    └── training_history.json   # metrics per epoch
+
+to run:
+  PYTHONPATH=/Users/revanshphull/tkhm python src/bert_train_simple.py \
+    --events-path events.csv \
+    --output-dir bert_models \
+    --max-epochs 15 \
+    --patience 5
+
+results:
+  test auroc: 0.9960
+  test auprc: 0.9953
+  train time: 4 minutes
+  parameters: 429k
